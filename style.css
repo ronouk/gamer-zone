@@ -1,0 +1,77 @@
+/* Universal styling */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 38px 12.5%;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.logo-part {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-part p {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.logo-part span {
+    color: #FF42A5;
+}
+
+.menu-part {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #3C354F;
+    gap: 32px;
+}
+
+.menu-part li{
+    list-style-type: none;
+}
+
+.menu-follow-icons {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    color: #3C354F;
+    padding: 17px 24px;
+    gap: 24px;
+}
+
+.menu-follow-icons img {
+    height: 24px;
+}
+
+
+/* Responsive part */
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        box-shadow: none;
+
+    }
+
+    .menu-part{
+        flex-direction: column;
+        margin-top: 62px;
+    }
+
+    .menu-follow-icons{
+        margin-top: 62px;
+    }
+}
