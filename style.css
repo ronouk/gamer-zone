@@ -7,6 +7,8 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+/* Header section */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -30,7 +32,7 @@ nav {
     color: #FF42A5;
 }
 
-.menu-part {
+.menu-part ul {
     display: flex;
     align-items: center;
     font-size: 18px;
@@ -38,8 +40,9 @@ nav {
     gap: 32px;
 }
 
-.menu-part li{
+.menu-part li {
     list-style-type: none;
+    cursor: pointer;
 }
 
 .menu-follow-icons {
@@ -56,6 +59,150 @@ nav {
     height: 24px;
 }
 
+/* Goat section */
+
+.goat-section {
+    height: 700px;
+    width: 100%;
+}
+
+.goat-section-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.goat-left {
+    background-image: url("assets/images/Group\ 14.png");
+    background-repeat: no-repeat;
+    background-size: fill;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 25%;
+}
+
+.goat-right {
+    background-image: url("assets/images/Group\ 18.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 700px;
+}
+
+.goat-left-content h2 {
+    color: #0B0223;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.goat-left-content h1 {
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 24px;
+}
+
+.goat-left-content li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 17px;
+}
+
+.goat-left-content li img {
+    width: 24px;
+    margin-right: 12px;
+}
+
+.goat-left-content li p {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.goat-left-content button,
+.know-more {
+    padding: 21px 40px;
+    border-radius: 48px;
+    border: none;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 41px;
+}
+
+.goat-left-content .sign-in {
+    background-color: #FF42A5;
+    margin-right: 24px;
+}
+
+.goat-left-content .go-rogue {
+    background-color: #4EC5F7;
+}
+
+
+/* we are gamer section */
+
+.we-are-gamer {
+    height: 600px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
+
+}
+
+.we-are-gamer-content {
+    display: flex;
+    align-items: center;
+    padding: 0 12.5%;
+}
+
+.we-are-gamer-right {
+    text-align: right;
+}
+
+.we-are-gamer-right h3 {
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 24px;
+}
+
+.gamer-description {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.know-more {
+    background-color: #FF42A5;
+    margin: 32px 0 24px 0;
+}
+
+.our-purpose {
+    color: #534C64;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+.our-purpose span{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
 
 /* Responsive part */
 
@@ -66,12 +213,32 @@ nav {
 
     }
 
-    .menu-part{
+    .menu-part ul {
         flex-direction: column;
         margin-top: 62px;
     }
 
-    .menu-follow-icons{
-        margin-top: 62px;
+    .menu-follow-icons {
+        margin-top: 31px;
     }
+
+    .goat-section-content {
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .goat-left {
+        order: 2;
+        background-size: cover;
+    }
+
+    .goat-right {
+        order: 1;
+    }
+
+    .goat-left-content {
+        scale: 0.7;
+    }
+
 }
